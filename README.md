@@ -1,3 +1,4 @@
 Overview
-This Interactive Quiz Application is a web-based platform that allows users to take quizzes on various topics, receive immediate feedback, and track their progress. The application features a user-friendly interface with interactive elements to enhance the learning experience.
+This is a simple and fun web-based quiz app made for learning and testing knowledge on different topics. It's designed with beginners in mind — both for the developers building it and the users playing with it! The goal is to make a clean and interactive app that gives users quick feedback on their answers and helps them learn along the way.
+
 
