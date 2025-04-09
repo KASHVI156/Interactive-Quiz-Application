@@ -5,5 +5,22 @@ body {
   color: #333;
   transition: all 0.3s ease;
 }
+.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.dark-mode .quiz-container {
+  background-color: #1e1e1e;
+}
 
 
