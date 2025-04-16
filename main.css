@@ -22,5 +22,37 @@ body {
 .dark-mode .quiz-container {
   background-color: #1e1e1e;
 }
+.question {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
 
+.options {
+  list-style: none;
+  padding: 0;
+}
+
+.options li {
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#feedback {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.category-select {
+  margin-bottom: 20px;
+}
+
+.toggle-theme {
+  float: right;
+}
 
