@@ -49,3 +49,23 @@ const categories = [
 ];
 
 
+// Quiz Questions
+
+const quizQuestions = {
+
+    math: [
+
+        {
+
+            question: "What is the smallest prime number?",
+
+            options: ["0", "1", "2", "3"],
+
+            correctAnswer: 2,
+
+            explanation: "The smallest prime number is 2. A prime number is a natural number greater than 1 that is not divisible by any other number except 1 and itself."
+
+        },
+
+        {
+
