@@ -10,3 +10,26 @@
   <div class="quiz-container">
     <button class="toggle-theme" onclick="toggleTheme()">🌙 Toggle Theme</button>
     <h2>Interactive Quiz App</h2>
+
+    <div class="category-select">
+      <label for="category">Choose a Category:</label>
+      <select id="category">
+        <option value="general">General Knowledge</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+      </select>
+    </div>
+
+    <div id="quiz">
+      <div class="question" id="question">Question will appear here...</div>
+      <ul class="options" id="options">
+        <!-- Options will go here -->
+      </ul>
+      <button onclick="submitAnswer()">Submit Answer</button>
+      <div id="feedback"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
