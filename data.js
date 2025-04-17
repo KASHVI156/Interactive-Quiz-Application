@@ -68,4 +68,32 @@ const quizQuestions = {
         },
 
         {
+            question: "What is the value of π (pi) rounded to two decimal places?",
+
+            options: ["3.12", "3.14", "3.16", "3.18"],
+
+            correctAnswer: 1,
+
+            explanation: "π (pi) is approximately equal to 3.14159... When rounded to two decimal places, it is 3.14."
+
+        },
+
+        {
+
+            question: "Which of the following is not a perfect square?",
+
+            options: ["1", "4", "9", "15"],
+
+            correctAnswer: 3,
+
+            explanation: "15 is not a perfect square. A perfect square is a number that can be expressed as the product of an integer by itself. The perfect squares are 1, 4, 9, 16, 25, etc."
+
+        },
+
+        {
+
+            question: "What is the next number in the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, ___?",
+
+
+            
 
