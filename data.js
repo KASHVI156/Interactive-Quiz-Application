@@ -122,6 +122,12 @@ const quizQuestions = {
             correctAnswer: 2,
             explanation: "0.25 is equivalent to 1/4 because 1 ÷ 4 = 0.25."
         },
+        {
+            question: "What is the result of 7² - 3²?",
+            options: ["40", "42", "44", "46"],
+            correctAnswer: 0,
+            explanation: "7² - 3² = 49 - 9 = 40."
+        },
 
             
 
