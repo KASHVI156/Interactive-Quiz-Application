@@ -98,6 +98,20 @@ main {
     margin: 0 auto;
     width: 100%;
 }
+/* Page System */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Home Page Styles */
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
 
 
