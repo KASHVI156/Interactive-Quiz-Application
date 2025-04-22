@@ -139,6 +139,9 @@ const quizQuestions = {
         {
             question: "Which planet is known as the Red Planet?",
             options: ["Venus", "Mars", "Jupiter", "Saturn"],
+            correctAnswer: 1,
+            explanation: "Mars is known as the Red Planet because of its reddish appearance, which is due to iron oxide (rust) on its surface."
+        },
 
             
 
