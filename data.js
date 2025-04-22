@@ -219,5 +219,5 @@ const quizQuestions = {
             options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
             correctAnswer: 1,
             explanation: "Saturn has the most moons with 82 confirmed 
-            
+            moons. Jupiter has 79, Uranus has 27, and Neptune has 14 confirmed moons."            
 
