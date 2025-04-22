@@ -247,4 +247,10 @@ const quizQuestions = {
             correctAnswer: 3,
             explanation: "Canberra is the capital city of Australia. It was chosen as the capital as a compromise between Sydney and Melbourne, which both wanted to be the capital."
         },
+        {
+            question: "Who wrote the play 'Romeo and Juliet'?",
+            options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+            correctAnswer: 1,
+            explanation: "Romeo and Juliet was written by William Shakespeare. It is one of his most famous works and tells the story of two young lovers whose deaths ultimately reconcile their feuding families."
+        },
 
