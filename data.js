@@ -105,6 +105,11 @@ const quizQuestions = {
             explanation: "To solve for x, we subtract 5 from both sides to get 2x = 10, then divide both sides by 2 to get x = 5."
         },
         {
+            question: "If a triangle has interior angles of 60°, 60°, and 60°, what type of triangle is it?",
+            options: ["Acute", "Right", "Equilateral", "Isosceles"],
+            correctAnswer: 2,
+            explanation: "A triangle with three 60° angles is an equilateral triangle. An equilateral triangle has three equal sides and three equal angles."
+        },
 
             
 
