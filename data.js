@@ -208,6 +208,11 @@ const quizQuestions = {
             correctAnswer: 2,
             explanation: "Nitrogen is the main component of the Earth's atmosphere, making up about 78% of it. Oxygen makes up about 21%, and other gases, including carbon dioxide, make up the remaining 1%."
         },
+        {
+            question: "What is the hardest natural substance on Earth?",
+            options: ["Steel", "Iron", "Diamond", "Graphite"],
+            correctAnswer: 2,
+            explanation: "Diamond is the hardest natural substance on Earth. It is a form of carbon where each carbon atom is bonded to four other carbon atoms in a tetrahedron."
 
             
 
