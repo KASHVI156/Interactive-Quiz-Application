@@ -96,6 +96,12 @@ const quizQuestions = {
             options: ["19", "20", "21", "22"],
             correctAnswer: 2,
             explanation: "The next number in the Fibonacci sequence is 
+            21. Each number is the sum of the two preceding ones: 13 + 8 = 21."
+        },
+        {
+            question: "Solve for x: 2x + 5 = 15",
+            options: ["5", "10", "4", "5.5"],
+            correctAnswer: 0,
 
             
 
