@@ -1,0 +1,58 @@
+name: Welcome New Contributors
+
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    if: github.event.action == 'opened' && github.actor != github.repository_owner
+    steps:
+      - name: Check if first contribution
+        id: first-contribution
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const creator = context.payload.pull_request.user.login;
+            const repo = context.repo;
+            const { data: pullRequests } = await github.rest.pulls.list({
+              owner: repo.owner,
+              repo: repo.repo,
+              state: 'all',
+              creator: creator
+            });
+            
+            if (pullRequests.length === 1) {
+              console.log('This is the first PR by ' + creator);
+              return true;
+            }
+            return false;
+          result-encoding: string
+      
+      - name: Greet first-time contributor
+        if: steps.first-contribution.outputs.result == 'true'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const repo = context.repo;
+            
+            github.rest.issues.createComment({
+              owner: repo.owner,
+              repo: repo.repo,
+              issue_number: prNumber,
+              body: `## 🎉 Welcome to your first Pull Request for QuizWiz! 
+              
+              Thank you for your contribution to our interactive quiz application!
+              
+              The team will review your changes shortly. In the meantime:
+              
+              - Make sure all features work properly
+              - Check that styling is consistent
+              - Test on different browsers if possible
+              
+              Happy coding! 👩‍💻👨‍💻`
+            });
