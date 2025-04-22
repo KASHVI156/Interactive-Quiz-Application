@@ -172,6 +172,12 @@ const quizQuestions = {
             correctAnswer: 2,
             explanation: "Gravity is the force that keeps planets in orbit around the Sun. It is a force of attraction between objects with mass."
         },
+        {
+            question: "Which of the following is not a type of blood cell?",
+            options: ["Red blood cell", "White blood cell", "Platelet", "Insulin"],
+            correctAnswer: 3,
+            explanation: "Insulin is not a type of blood cell; it is a hormone produced by the pancreas. Red blood cells, white blood cells, and platelets are the three main types of blood cells."
+        },
 
             
 
