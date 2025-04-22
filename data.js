@@ -188,6 +188,8 @@ const quizQuestions = {
             question: "Which animal can change its skin color to match its surroundings?",
             options: ["Elephant", "Chameleon", "Giraffe", "Penguin"],
             correctAnswer: 1,
+            explanation: "Chameleons can change their skin color to match their surroundings. They do this primarily for communication and regulating body temperature, rather than for camouflage as commonly believed."
+        },
 
             
 
