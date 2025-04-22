@@ -202,6 +202,12 @@ const quizQuestions = {
             correctAnswer: 1,
             explanation: "The cell is the smallest unit of life. All living organisms are composed of one or more cells."
         },
+        {
+            question: "What is the main component of the Earth's atmosphere?",
+            options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+            correctAnswer: 2,
+            explanation: "Nitrogen is the main component of the Earth's atmosphere, making up about 78% of it. Oxygen makes up about 21%, and other gases, including carbon dioxide, make up the remaining 1%."
+        },
 
             
 
