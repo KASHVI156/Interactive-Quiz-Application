@@ -14,3 +14,7 @@ const nextBtn = document.getElementById('next-btn');
 const tryAgainBtn = document.getElementById('try-again-btn');
 const backHomeBtn = document.getElementById('back-home-btn');
 
+
+// Theme Toggle
+const themeToggleBtn = document.getElementById('theme-toggle-btn');
+
