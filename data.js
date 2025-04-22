@@ -253,4 +253,10 @@ const quizQuestions = {
             correctAnswer: 1,
             explanation: "Romeo and Juliet was written by William Shakespeare. It is one of his most famous works and tells the story of two young lovers whose deaths ultimately reconcile their feuding families."
         },
+        {
+            question: "Which of these is not a primary color in painting?",
+            options: ["Red", "Blue", "Yellow", "Green"],
+            correctAnswer: 3,
+            explanation: "Green is not a primary color in painting. The primary colors in painting are red, blue, and yellow. Green is a secondary color created by mixing blue and yellow."
+        },
 
