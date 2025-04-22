@@ -60,4 +60,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
 
