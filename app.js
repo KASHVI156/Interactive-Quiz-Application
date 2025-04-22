@@ -61,4 +61,14 @@ function initApp() {
 
 // Theme Toggle Functions
 function loadDarkModePreference() {
-    const isDarkMode
+    const isDarkMode= localStorage.getItem('darkMode') === 'true';
+    quizState.isDarkMode = isDarkMode;
+    
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+    } else {
+        themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+}
+
