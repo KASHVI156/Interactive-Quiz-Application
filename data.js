@@ -134,6 +134,11 @@ const quizQuestions = {
             correctAnswer: 1,
             explanation: "The perimeter of a rectangle is calculated using the formula P = 2(l + w). With a length of 8 units and a width of 5 units, the perimeter is 2(8 + 5) = 2(13) = 26 units."
         }
+    ],
+    science: [
+        {
+            question: "Which planet is known as the Red Planet?",
+            options: ["Venus", "Mars", "Jupiter", "Saturn"],
 
             
 
