@@ -178,6 +178,8 @@ const quizQuestions = {
             correctAnswer: 3,
             explanation: "Insulin is not a type of blood cell; it is a hormone produced by the pancreas. Red blood cells, white blood cells, and platelets are the three main types of blood cells."
         },
+        {
+            question: "What is the speed of light in a vacuum?",
 
             
 
