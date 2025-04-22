@@ -110,6 +110,10 @@ const quizQuestions = {
             correctAnswer: 2,
             explanation: "A triangle with three 60° angles is an equilateral triangle. An equilateral triangle has three equal sides and three equal angles."
         },
+        {
+            question: "What is the area of a circle with a radius of 2 units?",
+            options: ["2π square units", "4π square units", "6π square units", "8π square units"],
+            correctAnswer: 1,
 
             
 
