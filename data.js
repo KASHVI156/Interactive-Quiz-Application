@@ -159,6 +159,13 @@ const quizQuestions = {
             options: ["Brain", "Heart", "Liver", "Skin"],
             correctAnswer: 3,
             explanation: "The skin is the largest organ in the human body. It covers about 2 square meters for the average adult and makes up about 15% of body weight."
+        },
+        {
+            question: "Which of these elements has the symbol 'O'?",
+            options: ["Osmium", "Oxygen", "Oganesson", "Ozone"],
+            correctAnswer: 1,
+            explanation: "The chemical symbol for Oxygen is 'O'. Osmium is 'Os', Oganesson is 'Og', and Ozone is not an element but a molecule (O₃)."
+        },
 
             
 
