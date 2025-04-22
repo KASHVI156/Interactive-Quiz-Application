@@ -40,3 +40,25 @@ const resultsHeader = document.getElementById('results-header');
 // Set current year in footer
 document.getElementById('current-year').textContent = new Date().getFullYear();
 
+// Quiz State
+let quizState = {
+    activeCategory: null,
+    questions: [],
+    currentQuestionIndex: 0,
+    score: 0,
+    selectedAnswer: null,
+    timer: null,
+    timeLeft: 30,
+    isDarkMode: false
+};
+
+// Initialize the app
+function initApp() {
+    loadDarkModePreference();
+    renderCategories();
+    setupEventListeners();
+}
+
+// Theme Toggle Functions
+function loadDarkModePreference() {
+    const isDarkMode
