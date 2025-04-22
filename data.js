@@ -180,6 +180,10 @@ const quizQuestions = {
         },
         {
             question: "What is the speed of light in a vacuum?",
+            options: ["300,000 km/s", "340 m/s", "3,000 km/s", "30,000 km/s"],
+            correctAnswer: 0,
+            explanation: "The speed of light in a vacuum is approximately 300,000 kilometers per second (3 × 10⁸ m/s)."
+        },
 
             
 
