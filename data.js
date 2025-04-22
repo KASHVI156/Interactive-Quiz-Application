@@ -93,7 +93,9 @@ const quizQuestions = {
         {
 
             question: "What is the next number in the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, ___?",
-
+            options: ["19", "20", "21", "22"],
+            correctAnswer: 2,
+            explanation: "The next number in the Fibonacci sequence is 
 
             
 
