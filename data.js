@@ -240,4 +240,11 @@ const quizQuestions = {
             options: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
             correctAnswer: 2,
             explanation: "The Mona Lisa was painted by Leonardo da Vinci. It is one of the most famous paintings in the world and is housed at the Louvre Museum in Paris, France."
+        },
+        {
+            question: "What is the capital city of Australia?",
+            options: ["Sydney", "Melbourne", "Perth", "Canberra"],
+            correctAnswer: 3,
+            explanation: "Canberra is the capital city of Australia. It was chosen as the capital as a compromise between Sydney and Melbourne, which both wanted to be the capital."
+        },
 
