@@ -114,6 +114,8 @@ const quizQuestions = {
             question: "What is the area of a circle with a radius of 2 units?",
             options: ["2π square units", "4π square units", "6π square units", "8π square units"],
             correctAnswer: 1,
+            explanation: "The area of a circle is calculated using the formula A = πr². With a radius of 2 units, the area is π × 2² = 4π square units."
+        },
 
             
 
