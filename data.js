@@ -153,6 +153,12 @@ const quizQuestions = {
             options: ["Solid", "Liquid", "Gas", "Molecule"],
             correctAnswer: 3,
             explanation: "Molecule is not a state of matter. The four common states of matter are solid, liquid, gas, and plasma. A molecule is a group of atoms bonded together."
+        },
+        {
+            question: "What is the largest organ in the human body?",
+            options: ["Brain", "Heart", "Liver", "Skin"],
+            correctAnswer: 3,
+            explanation: "The skin is the largest organ in the human body. It covers about 2 square meters for the average adult and makes up about 15% of body weight."
 
             
 
