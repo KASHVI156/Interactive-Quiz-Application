@@ -19,3 +19,13 @@
   /* Transitions */
   --transition-speed: 0.3s;
 }
+/* Dark Mode Variables */
+.dark-mode {
+  --bg-color: #111827;
+  --card-bg: #1f2937;
+  --text-color: #f9fafb;
+  --text-secondary: #d1d5db;
+  --border-color: #374151;
+  --hover-bg: #374151;
+}
+
