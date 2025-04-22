@@ -116,6 +116,12 @@ const quizQuestions = {
             correctAnswer: 1,
             explanation: "The area of a circle is calculated using the formula A = πr². With a radius of 2 units, the area is π × 2² = 4π square units."
         },
+        {
+            question: "Which of the following is equivalent to 0.25?",
+            options: ["1/2", "1/3", "1/4", "1/5"],
+            correctAnswer: 2,
+            explanation: "0.25 is equivalent to 1/4 because 1 ÷ 4 = 0.25."
+        },
 
             
 
