@@ -128,6 +128,12 @@ const quizQuestions = {
             correctAnswer: 0,
             explanation: "7² - 3² = 49 - 9 = 40."
         },
+        {
+            question: "If a rectangle has a length of 8 units and a width of 5 units, what is its perimeter?",
+            options: ["13 units", "26 units", "40 units", "30 units"],
+            correctAnswer: 1,
+            explanation: "The perimeter of a rectangle is calculated using the formula P = 2(l + w). With a length of 8 units and a width of 5 units, the perimeter is 2(8 + 5) = 2(13) = 26 units."
+        }
 
             
 
