@@ -290,5 +290,18 @@ const quizQuestions = {
             explanation: "The Yen is the currency of Japan. It is symbolized by ¥ and has been the official currency of Japan since 1871."
         },
         {
-            question
+            question: "Which planet is closest to the Sun?",
+            options: ["Venus", "Mars", "Earth", "Mercury"],
+            correctAnswer: 3,
+            explanation: "Mercury is the closest planet to the Sun. It is also the smallest planet in our solar system and completes an orbit around the Sun every 88 Earth days."
+        },
+        {
+            question: "Who wrote '1984'?",
+            options: ["George Orwell", "Aldous Huxley", "Ray Bradbury", "F. Scott Fitzgerald"],
+            correctAnswer: 0,
+            explanation: "1984 was written by George Orwell (the pen name of Eric Arthur Blair). It is a dystopian novel published in 1949 that portrays a totalitarian society where the government maintains complete control over all aspects of life."
+        }
+    ]
+};
+
 
