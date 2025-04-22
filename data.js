@@ -213,6 +213,11 @@ const quizQuestions = {
             options: ["Steel", "Iron", "Diamond", "Graphite"],
             correctAnswer: 2,
             explanation: "Diamond is the hardest natural substance on Earth. It is a form of carbon where each carbon atom is bonded to four other carbon atoms in a tetrahedron."
-
+        },
+        {
+            question: "Which planet has the most moons?",
+            options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+            correctAnswer: 1,
+            explanation: "Saturn has the most moons with 82 confirmed 
             
 
