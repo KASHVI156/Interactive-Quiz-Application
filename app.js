@@ -96,3 +96,31 @@ function setupEventListeners() {
     backToHomeBtn.addEventListener('click', goToHomePage);
     backHomeBtn.addEventListener('click', goToHomePage);
     
+ // Quiz flow
+ startQuizBtn.addEventListener('click', startQuiz);
+ quitQuizBtn.addEventListener('click', quitQuiz);
+ submitBtn.addEventListener('click', checkAnswer);
+ nextBtn.addEventListener('click', nextQuestion);
+ tryAgainBtn.addEventListener('click', retryQuiz);
+}
+
+// Page Navigation Functions
+function showPage(page) {
+ // Hide all pages
+ homePage.classList.remove('active');
+ quizIntroPage.classList.remove('active');
+ quizPage.classList.remove('active');
+ resultsPage.classList.remove('active');
+ 
+ // Show the requested page
+ page.classList.add('active');
+}
+
+function goToHomePage() {
+ resetQuizState();
+ showPage(homePage);
+}
+
+function goToIntroPage(category) {
+ quizState.activeCategory = category;
+ 
