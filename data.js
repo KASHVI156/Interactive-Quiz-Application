@@ -148,6 +148,11 @@ const quizQuestions = {
             correctAnswer: 2,
             explanation: "The chemical symbol for gold is Au, derived from the Latin word 'aurum', meaning gold."
         },
+        {
+            question: "Which of the following is not a state of matter?",
+            options: ["Solid", "Liquid", "Gas", "Molecule"],
+            correctAnswer: 3,
+            explanation: "Molecule is not a state of matter. The four common states of matter are solid, liquid, gas, and plasma. A molecule is a group of atoms bonded together."
 
             
 
