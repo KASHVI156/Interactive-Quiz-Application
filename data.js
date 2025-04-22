@@ -190,6 +190,9 @@ const quizQuestions = {
             correctAnswer: 1,
             explanation: "Chameleons can change their skin color to match their surroundings. They do this primarily for communication and regulating body temperature, rather than for camouflage as commonly believed."
         },
+        {
+            question: "What is the process called when plants convert light energy into chemical energy?",
+            options: ["Respiration", "Photosynthesis", "Fermentation", "Transpiration"],
 
             
 
