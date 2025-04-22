@@ -259,4 +259,8 @@ const quizQuestions = {
             correctAnswer: 3,
             explanation: "Green is not a primary color in painting. The primary colors in painting are red, blue, and yellow. Green is a secondary color created by mixing blue and yellow."
         },
+        {
+            question: "In what year did the Titanic sink?",
+            options: ["1910", "1912", "1915", "1918"],
+            correctAnswer: 1,
 
