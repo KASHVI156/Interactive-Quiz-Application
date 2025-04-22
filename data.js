@@ -271,4 +271,24 @@ const quizQuestions = {
             correctAnswer: 3,
             explanation: "The Pacific Ocean is the largest ocean on Earth. It covers about 30% of the Earth's surface and contains more than half of the free water on Earth."
         },
+        {
+            question: "Who is known as the father of modern physics?",
+            options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
+            correctAnswer: 1,
+            explanation: "Albert Einstein is often referred to as the father of modern physics due to his revolutionary theories, particularly the theory of relativity. His work has had a profound impact on our understanding of space, time, and gravity."
+        },
+        {
+            question: "Which instrument has 88 keys?",
+            options: ["Guitar", "Violin", "Piano", "Trumpet"],
+            correctAnswer: 2,
+            explanation: "A standard piano has 88 keys, consisting of 52 white keys and 36 black keys. The white keys represent the musical tones A, B, C, D, E, F, and G, and the black keys represent the sharps and flats."
+        },
+        {
+            question: "What is the currency of Japan?",
+            options: ["Yuan", "Won", "Yen", "Ringgit"],
+            correctAnswer: 2,
+            explanation: "The Yen is the currency of Japan. It is symbolized by ¥ and has been the official currency of Japan since 1871."
+        },
+        {
+            question
 
