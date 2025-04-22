@@ -18,3 +18,25 @@ const backHomeBtn = document.getElementById('back-home-btn');
 // Theme Toggle
 const themeToggleBtn = document.getElementById('theme-toggle-btn');
 
+// Quiz Elements
+const categoriesGrid = document.querySelector('.categories-grid');
+const categoryIcon = document.getElementById('category-icon');
+const categoryTitle = document.getElementById('category-title');
+const introHeader = document.getElementById('intro-header');
+const questionCount = document.getElementById('question-count');
+const progressBar = document.getElementById('progress-bar');
+const questionIndex = document.getElementById('question-index');
+const timeRemaining = document.getElementById('time-remaining');
+const currentScore = document.getElementById('current-score');
+const questionText = document.getElementById('question-text');
+const optionsContainer = document.getElementById('options-container');
+const feedbackContainer = document.getElementById('feedback-container');
+const resultsSummary = document.getElementById('results-summary');
+const scoreCircle = document.getElementById('score-circle');
+const percentage = document.getElementById('percentage');
+const feedbackMessage = document.getElementById('feedback-message');
+const resultsHeader = document.getElementById('results-header');
+
+// Set current year in footer
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
