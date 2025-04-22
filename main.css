@@ -145,6 +145,25 @@ main {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
+.category-stripe {
+    height: 0.5rem;
+    width: 100%;
+}
+
+.category-content {
+    padding: 1.5rem;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.category-emoji {
+    font-size: 2rem;
+}
 
 
 
