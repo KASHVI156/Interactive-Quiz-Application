@@ -65,5 +65,17 @@ header {
     align-items: center;
     cursor: pointer;
 }
+.logo-icon {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin-right: 0.5rem;
+}
+
+.logo h1 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 
 
