@@ -102,6 +102,9 @@ const quizQuestions = {
             question: "Solve for x: 2x + 5 = 15",
             options: ["5", "10", "4", "5.5"],
             correctAnswer: 0,
+            explanation: "To solve for x, we subtract 5 from both sides to get 2x = 10, then divide both sides by 2 to get x = 5."
+        },
+        {
 
             
 
