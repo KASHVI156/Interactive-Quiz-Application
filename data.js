@@ -166,6 +166,12 @@ const quizQuestions = {
             correctAnswer: 1,
             explanation: "The chemical symbol for Oxygen is 'O'. Osmium is 'Os', Oganesson is 'Og', and Ozone is not an element but a molecule (O₃)."
         },
+        {
+            question: "What force keeps planets in orbit around the Sun?",
+            options: ["Electromagnetic force", "Strong nuclear force", "Gravity", "Weak nuclear force"],
+            correctAnswer: 2,
+            explanation: "Gravity is the force that keeps planets in orbit around the Sun. It is a force of attraction between objects with mass."
+        },
 
             
 
