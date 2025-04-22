@@ -220,4 +220,10 @@ const quizQuestions = {
             correctAnswer: 1,
             explanation: "Saturn has the most moons with 82 confirmed 
             moons. Jupiter has 79, Uranus has 27, and Neptune has 14 confirmed moons."            
+        },
+        {
+            question: "What is the pH of pure water?",
+            options: ["0", "7", "14", "100"],
+            correctAnswer: 1,
+            explanation: "The pH of pure water is 7, which is considered neutral. A pH less than 7 is acidic, and a pH greater than 7 is basic (alkaline)."
 
