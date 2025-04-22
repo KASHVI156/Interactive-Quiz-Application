@@ -142,6 +142,12 @@ const quizQuestions = {
             correctAnswer: 1,
             explanation: "Mars is known as the Red Planet because of its reddish appearance, which is due to iron oxide (rust) on its surface."
         },
+        {
+            question: "What is the chemical symbol for gold?",
+            options: ["Go", "Gd", "Au", "Ag"],
+            correctAnswer: 2,
+            explanation: "The chemical symbol for gold is Au, derived from the Latin word 'aurum', meaning gold."
+        },
 
             
 
