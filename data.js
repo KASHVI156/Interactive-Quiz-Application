@@ -193,6 +193,9 @@ const quizQuestions = {
         {
             question: "What is the process called when plants convert light energy into chemical energy?",
             options: ["Respiration", "Photosynthesis", "Fermentation", "Transpiration"],
+            correctAnswer: 1,
+            explanation: "Photosynthesis is the process by which plants convert light energy into chemical energy. They use carbon dioxide, water, and sunlight to produce glucose and oxygen."
+        },
 
             
 
