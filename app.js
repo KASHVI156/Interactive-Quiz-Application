@@ -72,3 +72,27 @@ function loadDarkModePreference() {
     }
 }
 
+function toggleDarkMode() {
+    quizState.isDarkMode = !quizState.isDarkMode;
+    
+    if (quizState.isDarkMode) {
+        document.body.classList.add('dark-mode');
+        themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+    } else {
+        document.body.classList.remove('dark-mode');
+        themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+    
+    localStorage.setItem('darkMode', quizState.isDarkMode);
+}
+
+// Setup Event Listeners
+function setupEventListeners() {
+    // Theme toggle
+    themeToggleBtn.addEventListener('click', toggleDarkMode);
+    
+    // Navigation
+    homeLink.addEventListener('click', goToHomePage);
+    backToHomeBtn.addEventListener('click', goToHomePage);
+    backHomeBtn.addEventListener('click', goToHomePage);
+    
