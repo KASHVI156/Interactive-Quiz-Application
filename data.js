@@ -184,6 +184,10 @@ const quizQuestions = {
             correctAnswer: 0,
             explanation: "The speed of light in a vacuum is approximately 300,000 kilometers per second (3 × 10⁸ m/s)."
         },
+        {
+            question: "Which animal can change its skin color to match its surroundings?",
+            options: ["Elephant", "Chameleon", "Giraffe", "Penguin"],
+            correctAnswer: 1,
 
             
 
