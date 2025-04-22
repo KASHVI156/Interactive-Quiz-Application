@@ -263,4 +263,12 @@ const quizQuestions = {
             question: "In what year did the Titanic sink?",
             options: ["1910", "1912", "1915", "1918"],
             correctAnswer: 1,
+            explanation: "The Titanic sank on April 15, 1912, during its maiden voyage from Southampton to New York City. The ship hit an iceberg and sank, resulting in the deaths of more than 1,500 people."
+        },
+        {
+            question: "What is the largest ocean on Earth?",
+            options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+            correctAnswer: 3,
+            explanation: "The Pacific Ocean is the largest ocean on Earth. It covers about 30% of the Earth's surface and contains more than half of the free water on Earth."
+        },
 
