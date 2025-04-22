@@ -235,4 +235,9 @@ const quizQuestions = {
             correctAnswer: 2,
             explanation: "Japan is known as the Land of the Rising Sun. This name comes from the fact that Japan is located east of China, and thus the sun appears to rise from Japan when viewed from China."
         },
+        {
+            question: "Who painted the Mona Lisa?",
+            options: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+            correctAnswer: 2,
+            explanation: "The Mona Lisa was painted by Leonardo da Vinci. It is one of the most famous paintings in the world and is housed at the Louvre Museum in Paris, France."
 
