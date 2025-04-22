@@ -231,4 +231,8 @@ const quizQuestions = {
     general: [
         {
             question: "Which country is known as the Land of the Rising Sun?",
+            options: ["China", "Korea", "Japan", "Thailand"],
+            correctAnswer: 2,
+            explanation: "Japan is known as the Land of the Rising Sun. This name comes from the fact that Japan is located east of China, and thus the sun appears to rise from Japan when viewed from China."
+        },
 
