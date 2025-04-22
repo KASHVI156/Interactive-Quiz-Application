@@ -196,6 +196,12 @@ const quizQuestions = {
             correctAnswer: 1,
             explanation: "Photosynthesis is the process by which plants convert light energy into chemical energy. They use carbon dioxide, water, and sunlight to produce glucose and oxygen."
         },
+        {
+            question: "Which of these is the smallest unit of life?",
+            options: ["Atom", "Cell", "Molecule", "Tissue"],
+            correctAnswer: 1,
+            explanation: "The cell is the smallest unit of life. All living organisms are composed of one or more cells."
+        },
 
             
 
