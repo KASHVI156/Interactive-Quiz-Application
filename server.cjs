@@ -29,3 +29,21 @@ const MIME_TYPES = {
       filePath = './index.html';
     }
     
+
+     // Get file extension
+      const extname = path.extname(filePath);
+      let contentType = MIME_TYPES[extname] || 'application/octet-stream';
+      
+      // Read the file
+      fs.readFile(filePath, (err, content) => {
+        if (err) {
+          if (err.code === 'ENOENT') {
+            console.error(`File not found: ${filePath}`);
+            // Page not found
+            fs.readFile('./index.html', (err, content) => {
+              if (err) {
+                // If even the index.html is not found
+                console.error('index.html not found', err);
+                res.writeHead(500);
+                res.end('Error: Could not load index.html');
+              } else {
