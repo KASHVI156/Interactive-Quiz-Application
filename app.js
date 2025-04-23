@@ -453,6 +453,13 @@ function saveQuizResult() {
 }
 
 
+// Helper Functions
+function resetQuizState() {
+    // Stop any running timer
+    if (quizState.timer) {
+        clearInterval(quizState.timer);
+    }}
+    
 
 function shuffleArray(array) {
     // Create a copy to avoid modifying the original
