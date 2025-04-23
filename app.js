@@ -452,20 +452,7 @@ function saveQuizResult() {
     localStorage.setItem('quizResults', JSON.stringify(quizResults));
 }
 
-// Helper Functions
-function resetQuizState() {
-    // Stop any running timer
-    if (quizState.timer) {
-        clearInterval(quizState.timer);
-    }
-    
-    // Reset state
-    quizState.activeCategory = null;
-    quizState.questions = [];
-    quizState.currentQuestionIndex = 0;
-    quizState.score = 0;
-    quizState.selectedAnswer = null;
-}
+
 
 function shuffleArray(array) {
     // Create a copy to avoid modifying the original
