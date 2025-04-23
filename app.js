@@ -481,4 +481,4 @@ function shuffleArray(array) {
 }
 
 // Initialize the app when the page loads
-window.addEventListener('load', initApp);
+window.addEventListener('load', initApp);.
