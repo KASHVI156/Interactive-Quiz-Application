@@ -47,3 +47,24 @@ const MIME_TYPES = {
                 res.writeHead(500);
                 res.end('Error: Could not load index.html');
               } else {
+
+                 // Serve index.html for any non-existing path (SPA behavior)
+            console.log('Serving index.html as fallback');
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.end(content, 'utf-8');
+          }
+        });
+      } else {
+        // Server error
+        console.error(`Server error: ${err.code}`, err);
+        res.writeHead(500);
+        res.end(`Server Error: ${err.code}`);
+      }
+    } else {
+      // Success - file found and read
+      console.log(`Serving: ${filePath} as ${contentType}`);
+      res.writeHead(200, { 'Content-Type': contentType });
+      res.end(content, 'utf-8');
+    }
+  });
+});
