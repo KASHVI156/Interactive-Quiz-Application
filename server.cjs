@@ -68,3 +68,16 @@ const MIME_TYPES = {
     }
   });
 });
+
+
+// List all files in directory for debugging
+console.log('Files in current directory:');
+fs.readdir('.', (err, files) => {
+  if (err) {
+    console.error('Error reading directory:', err);
+  } else {
+    files.forEach(file => {
+      console.log('- ' + file);
+    });
+  }
+});
