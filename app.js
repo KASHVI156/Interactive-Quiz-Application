@@ -459,13 +459,7 @@ function resetQuizState() {
         clearInterval(quizState.timer);
     }
     
-    // Reset state
-    quizState.activeCategory = null;
-    quizState.questions = [];
-    quizState.currentQuestionIndex = 0;
-    quizState.score = 0;
-    quizState.selectedAnswer = null;
-}
+
 
 function shuffleArray(array) {
     // Create a copy to avoid modifying the original
