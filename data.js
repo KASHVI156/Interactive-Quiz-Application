@@ -1,102 +1,57 @@
 // Quiz Categories
 const categories = [
-
     {
-
         id: 1,
-
         name: "Mathematics",
-
         slug: "math",
-
         icon: "✖️",
         color: "bg-blue",
-
         questionCount: 10
-
     },
-
     {
-
         id: 2,
-
         name: "Science",
-
         slug: "science",
-
         icon: "🧪",
         color: "bg-green",
-
         questionCount: 15
-
     },
-
     {
-
         id: 3,
-
         name: "General Knowledge",
-
         slug: "general",
-
         icon: "🌍",
         color: "bg-purple",
-
         questionCount: 12
-
     }
-
 ];
 
-
 // Quiz Questions
-
 const quizQuestions = {
-
     math: [
-
         {
-
             question: "What is the smallest prime number?",
-
             options: ["0", "1", "2", "3"],
-
             correctAnswer: 2,
-
             explanation: "The smallest prime number is 2. A prime number is a natural number greater than 1 that is not divisible by any other number except 1 and itself."
-
         },
-
         {
             question: "What is the value of π (pi) rounded to two decimal places?",
-
             options: ["3.12", "3.14", "3.16", "3.18"],
-
             correctAnswer: 1,
-
             explanation: "π (pi) is approximately equal to 3.14159... When rounded to two decimal places, it is 3.14."
-
         },
-
         {
-
             question: "Which of the following is not a perfect square?",
-
             options: ["1", "4", "9", "15"],
-
             correctAnswer: 3,
-
             explanation: "15 is not a perfect square. A perfect square is a number that can be expressed as the product of an integer by itself. The perfect squares are 1, 4, 9, 16, 25, etc."
-
         },
-
         {
-
             question: "What is the next number in the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, ___?",
             options: ["19", "20", "21", "22"],
             correctAnswer: 2,
-            explanation: "The next number in the Fibonacci sequence is 
-            21. Each number is the sum of the two preceding ones: 13 + 8 = 21."
+            explanation: "The next number in the Fibonacci sequence is 21. Each number is the sum of the two preceding ones: 13 + 8 = 21."
         },
         {
             question: "Solve for x: 2x + 5 = 15",
@@ -218,6 +173,87 @@ const quizQuestions = {
             question: "Which planet has the most moons?",
             options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
             correctAnswer: 1,
-            explanation: "Saturn has the most moons with 82 confirmed 
-            moons. Jupiter has 79, Uranus has 27, and Neptune has 14 confirmed moons."            
-
+            explanation: "Saturn has the most moons with 82 confirmed moons. Jupiter has 79, Uranus has 27, and Neptune has 14 confirmed moons."
+        },
+        {
+            question: "What is the pH of pure water?",
+            options: ["0", "7", "14", "100"],
+            correctAnswer: 1,
+            explanation: "The pH of pure water is 7, which is considered neutral. A pH less than 7 is acidic, and a pH greater than 7 is basic (alkaline)."
+        }
+    ],
+    general: [
+        {
+            question: "Which country is known as the Land of the Rising Sun?",
+            options: ["China", "Korea", "Japan", "Thailand"],
+            correctAnswer: 2,
+            explanation: "Japan is known as the Land of the Rising Sun. This name comes from the fact that Japan is located east of China, and thus the sun appears to rise from Japan when viewed from China."
+        },
+        {
+            question: "Who painted the Mona Lisa?",
+            options: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+            correctAnswer: 2,
+            explanation: "The Mona Lisa was painted by Leonardo da Vinci. It is one of the most famous paintings in the world and is housed at the Louvre Museum in Paris, France."
+        },
+        {
+            question: "What is the capital city of Australia?",
+            options: ["Sydney", "Melbourne", "Perth", "Canberra"],
+            correctAnswer: 3,
+            explanation: "Canberra is the capital city of Australia. It was chosen as the capital as a compromise between Sydney and Melbourne, which both wanted to be the capital."
+        },
+        {
+            question: "Who wrote the play 'Romeo and Juliet'?",
+            options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+            correctAnswer: 1,
+            explanation: "Romeo and Juliet was written by William Shakespeare. It is one of his most famous works and tells the story of two young lovers whose deaths ultimately reconcile their feuding families."
+        },
+        {
+            question: "Which of these is not a primary color in painting?",
+            options: ["Red", "Blue", "Yellow", "Green"],
+            correctAnswer: 3,
+            explanation: "Green is not a primary color in painting. The primary colors in painting are red, blue, and yellow. Green is a secondary color created by mixing blue and yellow."
+        },
+        {
+            question: "In what year did the Titanic sink?",
+            options: ["1910", "1912", "1915", "1918"],
+            correctAnswer: 1,
+            explanation: "The Titanic sank on April 15, 1912, during its maiden voyage from Southampton to New York City. The ship hit an iceberg and sank, resulting in the deaths of more than 1,500 people."
+        },
+        {
+            question: "What is the largest ocean on Earth?",
+            options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+            correctAnswer: 3,
+            explanation: "The Pacific Ocean is the largest ocean on Earth. It covers about 30% of the Earth's surface and contains more than half of the free water on Earth."
+        },
+        {
+            question: "Who is known as the father of modern physics?",
+            options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
+            correctAnswer: 1,
+            explanation: "Albert Einstein is often referred to as the father of modern physics due to his revolutionary theories, particularly the theory of relativity. His work has had a profound impact on our understanding of space, time, and gravity."
+        },
+        {
+            question: "Which instrument has 88 keys?",
+            options: ["Guitar", "Violin", "Piano", "Trumpet"],
+            correctAnswer: 2,
+            explanation: "A standard piano has 88 keys, consisting of 52 white keys and 36 black keys. The white keys represent the musical tones A, B, C, D, E, F, and G, and the black keys represent the sharps and flats."
+        },
+        {
+            question: "What is the currency of Japan?",
+            options: ["Yuan", "Won", "Yen", "Ringgit"],
+            correctAnswer: 2,
+            explanation: "The Yen is the currency of Japan. It is symbolized by ¥ and has been the official currency of Japan since 1871."
+        },
+        {
+            question: "Which planet is closest to the Sun?",
+            options: ["Venus", "Mars", "Earth", "Mercury"],
+            correctAnswer: 3,
+            explanation: "Mercury is the closest planet to the Sun. It is also the smallest planet in our solar system and completes an orbit around the Sun every 88 Earth days."
+        },
+        {
+            question: "Who wrote '1984'?",
+            options: ["George Orwell", "Aldous Huxley", "Ray Bradbury", "F. Scott Fitzgerald"],
+            correctAnswer: 0,
+            explanation: "1984 was written by George Orwell (the pen name of Eric Arthur Blair). It is a dystopian novel published in 1949 that portrays a totalitarian society where the government maintains complete control over all aspects of life."
+        }
+    ]
+};
