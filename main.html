@@ -1,35 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Interactive Quiz App</title>
-  <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizWiz - Test Your Knowledge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <div class="quiz-container">
-    <button class="toggle-theme" onclick="toggleTheme()">🌙 Toggle Theme</button>
-    <h2>Interactive Quiz App</h2>
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <div class="logo" id="home-link">
+                    <i class="fas fa-brain logo-icon"></i>
+                    <h1>QuizWiz</h1>
+                </div>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
 
-    <div class="category-select">
-      <label for="category">Choose a Category:</label>
-      <select id="category">
-        <option value="general">General Knowledge</option>
-        <option value="math">Math</option>
-        <option value="science">Science</option>
-      </select>
-    </div>
+<!-- Main Content -->
+<main>
+  <!-- Pages will be shown/hidden using JavaScript -->
+  
+  <!-- Home Page -->
+  <div id="home-page" class="page active">
+      <div class="hero">
+          <h2>Welcome to QuizWiz</h2>
+          <p>Test your knowledge with our interactive quizzes. Select a category below to get started!</p>
+      </div>
 
-    <div id="quiz">
-      <div class="question" id="question">Question will appear here...</div>
-      <ul class="options" id="options">
-        <!-- Options will go here -->
-      </ul>
-      <button onclick="submitAnswer()">Submit Answer</button>
-      <div id="feedback"></div>
-    </div>
+      <div class="categories-grid">
+          <!-- Categories will be populated by JavaScript -->
+      </div>
+
+      <div class="features-section">
+          <h2>Features</h2>
+          <div class="features-grid">
+              <div class="feature-card">
+                  <div class="feature-icon blue">
+                      <i class="fas fa-bolt"></i>
+                  </div>
+                  <h3>Instant Feedback</h3>
+                  <p>Get immediate results and explanations after each question.</p>
+              </div>
+              <div class="feature-card">
+                  <div class="feature-icon green">
+                      <i class="fas fa-clock"></i>
+                  </div>
+                  <h3>Timed Challenges</h3>
+                  <p>Race against the clock to answer questions before time runs out.</p>
+              </div>
+              <div class="feature-card">
+                  <div class="feature-icon purple">
+                      <i class="fas fa-chart-line"></i>
+                  </div>
+                  <h3>Progress Tracking</h3>
+                  <p>Keep track of your scores and see your improvement over time.</p>
+              </div>
+          </div>
+      </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Quiz Intro Page -->
+  <div id="quiz-intro-page" class="page">
+    <div class="intro-card">
+        <div id="intro-header" class="intro-header">
+            <div class="intro-header-content">
+                <div>
+                    <span id="category-icon" class="category-icon"></span>
+                    <h2 id="category-title">Quiz</h2>
+                    <p>Test your knowledge with these engaging questions!</p>
+                </div>
+                <span id="question-count" class="question-count">10 questions</span>
+            </div>
+        </div>
+        <div class="intro-content">
+            <div class="info-list">
+                <div class="info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Multiple choice questions</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>30 seconds per question</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Detailed explanations for each answer</p>
+                </div>
+            </div>
+            <div class="intro-actions">
+                <button id="start-quiz-btn" class="btn primary-btn">
+                    Start Quiz
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button id="back-to-home-btn" class="btn secondary-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Categories
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- Quiz Page -->
+ <div id="quiz-page" class="page">
+  <div class="quiz-container">
+      <!-- Progress Bar -->
+      <div class="progress-container">
+          <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <!-- Quiz Header -->
+      <div class="quiz-header">
+          <div class="question-number">
+              <span>Question</span>
+              <div id="question-index">1/10</div>
+          </div>
+          <div class="timer">
+              <i class="fas fa-clock"></i>
+              <div id="time-remaining">30s</div>
+          </div>
+          <div class="score">
+              <span>Score</span>
+              <div id="current-score">0</div>
+          </div>
+      </div>
+
+       <!-- Question Card -->
+       <div class="question-card">
+        <h2 id="question-text">Question text will appear here</h2>
+        <div id="options-container" class="options-container">
+            <!-- Options will be populated by JavaScript -->
+        </div>
+        <div id="feedback-container" class="feedback-container hidden">
+            <!-- Feedback will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="quiz-actions">
+        <button id="quit-quiz-btn" class="btn secondary-btn">
+            <i class="fas fa-times"></i>
+            Quit Quiz
+        </button>
+        <button id="next-btn" class="btn primary-btn hidden">
+            Next Question
+            <i class="fas fa-arrow-right"></i>
+        </button>
+        <button id="submit-btn" class="btn primary-btn disabled">
+            Submit Answer
+            <i class="fas fa-check"></i>
+        </button>
+    </div>
+</div>
+</div>
+
+
+
+<!-- Results Page -->
+<div id="results-page" class="page">
+  <div class="results-card">
+      <div id="results-header" class="results-header"></div>
+      <div class="results-content">
+          <div class="results-icon">
+              <i class="fas fa-trophy"></i>
+          </div>
+          <h2>Quiz Complete!</h2>
+          <p id="results-summary">You scored 0 out of 10!</p>
+          <div class="score-circle">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <path id="score-circle" class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+              </svg>
+              <div id="percentage" class="percentage">0%</div>
+          </div>
+          <p id="feedback-message" class="feedback-message">Keep practicing!</p>
+          <div class="results-actions">
+              <button id="try-again-btn" class="btn primary-btn">
+                  <i class="fas fa-redo"></i>
+                  Try Again
+              </button>
+              <button id="back-home-btn" class="btn secondary-btn">
+                  <i class="fas fa-home"></i>
+                  Home
+              </button>
+          </div>
+      </div>
+  </div>
+</div>
+</main>
+
+ <!-- Footer -->
+ <footer>
+  <div class="footer-content">
+      <p>&copy; <span id="current-year"></span> QuizWiz. All rights reserved.</p>
+      <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
+      </div>
+  </div>
+</footer>
+</div>
+
+<!-- JavaScript Files -->
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
