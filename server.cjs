@@ -18,3 +18,14 @@ const MIME_TYPES = {
     '.svg': 'image/svg+xml',
     '.ico': 'image/x-icon'
   };
+
+  // Create HTTP server
+  const server = http.createServer((req, res) => {
+    console.log(`Request for ${req.url}`);
+    
+    // Normalize the URL path
+    let filePath = '.' + req.url;
+    if (filePath === './') {
+      filePath = './index.html';
+    }
+    
