@@ -453,7 +453,7 @@ function saveQuizResult() {
 }
 
 
- Helper Functions
+//  Helper Functions
 function resetQuizState() {
     // Stop any running timer
     if (quizState.timer) {
