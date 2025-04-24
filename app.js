@@ -458,7 +458,7 @@ function resetQuizState() {
     // Stop any running timer
     if (quizState.timer) {
         clearInterval(quizState.timer);
-    }}
+    }
     
 
 function shuffleArray(array) {
