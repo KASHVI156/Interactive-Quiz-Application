@@ -1,11 +1,11 @@
-// DOM Elements.......................
-// Page Elements,,
+// DOM Elements
+// Page Elements
 const homePage = document.getElementById('home-page');
 const quizIntroPage = document.getElementById('quiz-intro-page');
 const quizPage = document.getElementById('quiz-page');
 const resultsPage = document.getElementById('results-page');
 
-// Navigation  
+// Navigation Elements
 const homeLink = document.getElementById('home-link');
 const backToHomeBtn = document.getElementById('back-to-home-btn');
 const startQuizBtn = document.getElementById('start-quiz-btn');
@@ -126,9 +126,9 @@ function goToIntroPage(category) {
     
     // Update the intro page with category info
     categoryIcon.textContent = category.icon;
-    categoryTitle.textContent = ${category.name} Quiz;
-    questionCount.textContent = ${category.questionCount} questions;
-    introHeader.className = intro-header ${category.color};
+    categoryTitle.textContent = `${category.name} Quiz`;
+    questionCount.textContent = `${category.questionCount} questions`;
+    introHeader.className = `intro-header ${category.color}`;
     
     showPage(quizIntroPage);
 }
@@ -145,13 +145,13 @@ function goToResultsPage() {
     const scorePercentage = Math.round((quizState.score / quizState.questions.length) * 100);
     
     // Update result content
-    resultsSummary.textContent = You scored ${quizState.score} out of ${quizState.questions.length} in the ${quizState.activeCategory.name} quiz!;
+    resultsSummary.textContent = `You scored ${quizState.score} out of ${quizState.questions.length} in the ${quizState.activeCategory.name} quiz!`;
     
     // Set score circle color and percentage
-    scoreCircle.setAttribute('stroke-dasharray', ${scorePercentage}, 100);
-    percentage.textContent = ${scorePercentage}%;
+    scoreCircle.setAttribute('stroke-dasharray', `${scorePercentage}, 100`);
+    percentage.textContent = `${scorePercentage}%`;
     
-    resultsHeader.className = results-header ${quizState.activeCategory.color};
+    resultsHeader.className = `results-header ${quizState.activeCategory.color}`;
     
     // Clear classes first
     percentage.className = 'percentage';
@@ -219,8 +219,8 @@ function displayQuestion() {
     const currentQuestion = quizState.questions[quizState.currentQuestionIndex];
     
     // Update progress elements
-    progressBar.style.width = ${(quizState.currentQuestionIndex / quizState.questions.length) * 100}%;
-    questionIndex.textContent = ${quizState.currentQuestionIndex + 1}/${quizState.questions.length};
+    progressBar.style.width = `${(quizState.currentQuestionIndex / quizState.questions.length) * 100}%`;
+    questionIndex.textContent = `${quizState.currentQuestionIndex + 1}/${quizState.questions.length}`;
     currentScore.textContent = quizState.score;
     
     // Update question text
@@ -302,7 +302,7 @@ function checkAnswer() {
     
     // Show feedback
     feedbackContainer.classList.remove('hidden');
-    feedbackContainer.className = feedback-container ${isCorrect ? 'feedback-correct' : 'feedback-incorrect'};
+    feedbackContainer.className = `feedback-container ${isCorrect ? 'feedback-correct' : 'feedback-incorrect'}`;
     
     feedbackContainer.innerHTML = `
         <div class="feedback-icon ${isCorrect ? 'icon-correct' : 'icon-incorrect'}">
@@ -416,7 +416,7 @@ function startTimer() {
 }
 
 function updateTimerDisplay() {
-    timeRemaining.textContent = ${quizState.timeLeft}s;
+    timeRemaining.textContent = `${quizState.timeLeft}s`;
     
     // Clear any existing classes
     timeRemaining.className = '';
@@ -452,14 +452,20 @@ function saveQuizResult() {
     localStorage.setItem('quizResults', JSON.stringify(quizResults));
 }
 
-
-//  Helper Functions
+// Helper Functions
 function resetQuizState() {
     // Stop any running timer
     if (quizState.timer) {
         clearInterval(quizState.timer);
-    }}
+    }
     
+    // Reset state
+    quizState.activeCategory = null;
+    quizState.questions = [];
+    quizState.currentQuestionIndex = 0;
+    quizState.score = 0;
+    quizState.selectedAnswer = null;
+}
 
 function shuffleArray(array) {
     // Create a copy to avoid modifying the original
